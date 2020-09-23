@@ -35,7 +35,7 @@ std::vector<bool> OddMask(std::vector<int>);
 int Sum(std::vector<int> nums){
 	int tmp = 0;
 
-	for(int i = 0; i < nums.size(); i++){
+	for(unsigned int i = 0; i < nums.size(); i++){
 		tmp = tmp + nums[i];
 	}
 
@@ -71,6 +71,9 @@ int Sign(int num){
 	}
 	if(num >= 0){
 		return 1;
+	}
+	else{
+		return 0;
 	}
 }
 
@@ -128,19 +131,3 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
-
-
-int main(){
-	std::string ex1 = "Hello##How##Are##You";
-	std:: string sep = "##";
-
-	std::vector<std::string> t = Split(ex1,sep);
-
-	while(t.size() != 0){
-		std::cout << t.pop_back() << std::endl;
-	}
-
-
-
-	return 0;
-}
