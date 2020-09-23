@@ -1,4 +1,6 @@
-/* String functions section */
+#include <iostream>
+#include <math.h>
+#include <vector>/* String functions section */
 
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -116,8 +118,9 @@ int main(){
   int x = 1;
   int y = 2;
 
-  print(Factorial(x));
-  print(Factorial(y));
+  std::cout<<"Test"<<std::endl;
+  std::cout<<x+y<<std::endl;
+
 
 
 }
