@@ -6,5 +6,5 @@ all: test
 clean:
 	rm test
 
-maze: test.cpp
+test: test.cpp
 	$(CXX) $(CXXFLAGS) test.cpp -o test
